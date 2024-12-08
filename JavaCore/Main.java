@@ -6,6 +6,11 @@ public class Main {
 
     public static void main(String[] args)
     {
+        Calculator.CalculatorMain();
+
+
+
+
         /* 
         //#1
     
@@ -30,7 +35,6 @@ public class Main {
         // String name = PeremennayaScannera.nextLine();
         // System.out.println("Твоё имя: " + name);
 
-Calculator.CalculatorMain();
 
 
 
