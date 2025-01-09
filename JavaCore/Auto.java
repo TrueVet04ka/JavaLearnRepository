@@ -1,5 +1,3 @@
-package JavaCore;
-
 
 public class Auto
 {
@@ -25,7 +23,7 @@ System.out.println(GetValues());
     }
  
 
-    public String GetValues()
+    protected String GetValues()
     {
         String info = " Спиид: " + speed +" Вееес: " + weight + " Цвеет "+ color;
         String InfoCoordinates = " Coordinates: ";
