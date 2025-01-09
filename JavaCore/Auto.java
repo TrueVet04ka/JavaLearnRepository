@@ -3,19 +3,27 @@ package JavaCore;
 
 public class Auto
 {
-    public float speed;
-    public int weight;
-    public String color;
-    public byte[] coordinate;
+    private float speed= 0;
+    private int weight= 0;
+    private String color= "null";
+    private byte[] coordinate = {0, 0, 0};
 
-    public void SetValues(float _speed, int _weight, String _color, byte[] _coordinate)
+
+    public Auto(float speed, int weight, String color, byte[] coordinate)
     {
-speed = _speed;
-weight = _weight;
-color = _color;
-coordinate = _coordinate;
-
+        this.speed = speed;
+        this.weight = weight;
+        this.color = color;
+        this.coordinate = coordinate;
+        System.out.println(GetValues());
     }
+    public Auto (float speed, int weight)
+    {
+this.speed = speed;
+this.weight = weight;
+System.out.println(GetValues());
+    }
+ 
 
     public String GetValues()
     {
