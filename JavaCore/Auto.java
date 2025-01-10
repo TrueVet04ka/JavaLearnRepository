@@ -17,9 +17,18 @@ public class Auto
     }
     public Auto (float speed, int weight)
     {
-this.speed = speed;
-this.weight = weight;
-System.out.println(GetValues());
+        this.speed = speed;
+        this.weight = weight;
+        System.out.println(GetValues());
+    }
+
+    public void SetValues(float speed, int weight, String color, byte[] coordinate)
+    {
+        this.speed = speed;
+        this.weight = weight;
+        this.color = color;
+        this.coordinate = coordinate;
+  
     }
  
 

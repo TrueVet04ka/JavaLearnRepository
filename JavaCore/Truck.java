@@ -6,21 +6,36 @@ public class Truck extends Auto {
     {
 super(speed, weight);
     }
-    Truck(float speed, int weight, boolean load)
+    Truck(float speed, int weight,String color, byte[] coordinate)
     {
-super(speed, weight);
-isLoaded = load;
+super(speed, weight, color, coordinate);
+
+    }
+
+    public void SetValues(float speed, int weight, String color, byte[] coordinate, boolean loadedstat)
+    {
+        System.out.println("set method");
+       super.SetValues(speed, weight, color, coordinate);
+       isLoaded = loadedstat;
+       System.out.println(GetValues());
+        System.out.println(getLoaded());
+    }
+@Override
+    public void SetValues(float speed, int weight, String color, byte[] coordinate)
+    {
+        super.SetValues(speed, weight, color, coordinate);
+  
     }
     public void setLoadedStat(boolean loaded)
     {
 this.isLoaded = loaded;
     }
-    public void getLoaded()
+    public String getLoaded()
     {
         if(isLoaded)
-        System.out.println("Груз есть");
+       return  "Груз есть";
         else
-        System.out.println("Груза нет");
+        return "Груза нет";
 
     }
 }
