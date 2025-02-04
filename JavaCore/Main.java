@@ -41,6 +41,22 @@ public class Main {
             System.out.println(a + " Больше " + n);
 
     }
+                // Продвинутые упражнения
+// Классификация возраста: Напишите программу, которая принимает возраст пользователя и выводит категорию (ребенок, подросток, взрослый, пожилой).
+void ex4 (int n)
+{
+    if (n<14)
+    {
+        System.out.println("Малютка");
+    }
+    else if(n>=14 && n<18)
+    System.out.println("Подросточек");
+    else if(n>=18 && n<=55)
+    System.out.println("Большой");
+    else    
+    System.out.println("Ваще старичок жесть");
+}
+
 
     public static void main(String[] args)
     {
@@ -51,8 +67,7 @@ public class Main {
         obj.ex1(a);
         obj.ex2(d);
         obj.ex3(d, a);
-
-
+        obj.ex4(d);
         
         
         
