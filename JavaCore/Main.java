@@ -75,6 +75,16 @@ void ex4 (int n)
             else
             System.out.println("Мало денег");
         }
+// Определение високосного года: Напишите программу, которая принимает год и определяет, является ли он високосным.
+void ex6 (int n)
+{
+    if (n % 4 == 0 ^ n % 100 == 0  ^ n % 400 == 0 ) {
+        System.out.println("Высокоcный");
+    }
+    else
+    System.out.println("Не высокосный");
+    
+}
 
 
     public static void main(String[] args)
@@ -88,7 +98,7 @@ void ex4 (int n)
         obj.ex3(d, a);
         obj.ex4(d);
         obj.ex5(d);
-        
+        obj.ex6(d);
         
        
         
