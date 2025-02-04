@@ -56,6 +56,25 @@ void ex4 (int n)
     else    
     System.out.println("Ваще старичок жесть");
 }
+    // Калькулятор скидок: Пользователь вводит сумму покупки. Если сумма больше 5000, предоставляется скидка 10%, если больше 10000 — 20%.
+        //  Выведите итоговую сумму с учетом скидки.
+        void ex5 (double n)
+        {
+            double a ;
+            if (n >= 5000 && n<=10000){
+               a = 0.1;
+                n = n - (n * a);
+                System.out.println(n);
+            }
+            else if(n>10000)
+            {
+                a = 0.2;
+                n = n - (n * a);
+                System.out.println( n);
+            }
+            else
+            System.out.println("Мало денег");
+        }
 
 
     public static void main(String[] args)
@@ -68,7 +87,7 @@ void ex4 (int n)
         obj.ex2(d);
         obj.ex3(d, a);
         obj.ex4(d);
-        
+        obj.ex5(d);
         
         
        
