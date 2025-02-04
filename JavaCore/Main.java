@@ -16,15 +16,26 @@ public class Main {
      System.out.println("Нечёткое");
     }
 }
-
+ // Проверка положительного числа: Напишите программу, которая определяет, является ли введенное число положительным, отрицательным или нулем.
+    public void ex2(int n)
+    {
+        if (n>0)
+            System.out.println(n + " Больше нуля");
+        else if (n == 0)
+            System.out.println(n + " Равняется нулю");
+        else if (n < 0)    
+             System.out.println(n + " Меньше нуля");
+        else
+            System.out.println("EXEPTION Типо");
+    }
     public static void main(String[] args)
     {
        
-        int a = 5;      
+        int a = 2000;      
         int d = 0;
         Main obj = new Main();
         obj.ex1(a);
-
+        obj.ex2(a);
 
 
 
