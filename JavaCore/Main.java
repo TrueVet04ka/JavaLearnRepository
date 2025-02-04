@@ -28,6 +28,20 @@ public class Main {
         else
             System.out.println("EXEPTION Типо");
     }
+    // Определение максимального из двух чисел: Напишите программу, которая принимает два числа и выводит наибольшее из них.
+    public void ex3(int n, int a )
+    {
+        if (n > a) 
+            System.out.println(n + " Больше " + a);  
+        else if (n == a)
+        {
+            System.out.println(n + " Равнo " + a);
+        }          
+        else
+            System.out.println(a + " Больше " + n);
+
+    }
+
     public static void main(String[] args)
     {
        
@@ -35,8 +49,8 @@ public class Main {
         int d = 0;
         Main obj = new Main();
         obj.ex1(a);
-        obj.ex2(a);
-
+        obj.ex2(d);
+        obj.ex3(d, a);
 
 
         
