@@ -4,15 +4,11 @@ public class Main {
  
     public static void main(String[] args)
     {
-        Employee work = new FullTimeEmployee();
-        FullTimeEmployee work2 = new FullTimeEmployee();
-        work.calculateSalary();
-        work2.calculateSalary();
-
-        Employee work3 = new PartTimeEmployee();
-        PartTimeEmployee work4 = new PartTimeEmployee();
-        work3.calculateSalary();
-        work4.calculateSalary();
+       //Реализуйте класс Printer с перегруженными методами print(int number), print(String text), print(double value).
+       Printer printer = new Printer();
+       printer.print(5);
+       printer.print("six");
+       printer.print(5.55);
     }
 
    
