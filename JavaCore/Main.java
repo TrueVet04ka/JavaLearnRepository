@@ -4,8 +4,9 @@ public class Main {
  
     public static void main(String[] args)
     {
-        // Создайте класс MathUtils со статическим методом square(int x). Используйте этот метод в основной программе без создания экземпляра MathUtils.
-            MathUtils.square(5);
+        System.out.println(MathOperations.recursion(5));
+
+    // Напишите рекурсивный метод для вычисления факториала числа в классе MathOperations.
     }
 
    
