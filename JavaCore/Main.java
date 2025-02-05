@@ -4,11 +4,8 @@ public class Main {
  
     public static void main(String[] args)
     {
-       //Реализуйте класс Printer с перегруженными методами print(int number), print(String text), print(double value).
-       Printer printer = new Printer();
-       printer.print(5);
-       printer.print("six");
-       printer.print(5.55);
+        // Создайте класс MathUtils со статическим методом square(int x). Используйте этот метод в основной программе без создания экземпляра MathUtils.
+            MathUtils.square(5);
     }
 
    
