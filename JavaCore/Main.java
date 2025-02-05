@@ -4,11 +4,15 @@ public class Main {
  
     public static void main(String[] args)
     {
-     Circle circle = new Circle();
-     Restangle restangle = new Restangle();
+        Employee work = new FullTimeEmployee();
+        FullTimeEmployee work2 = new FullTimeEmployee();
+        work.calculateSalary();
+        work2.calculateSalary();
 
-     circle.draw();
-     restangle.draw();
+        Employee work3 = new PartTimeEmployee();
+        PartTimeEmployee work4 = new PartTimeEmployee();
+        work3.calculateSalary();
+        work4.calculateSalary();
     }
 
    
