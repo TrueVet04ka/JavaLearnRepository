@@ -1,44 +1,21 @@
 
-
 public class Main {
  
     public static void main(String[] args)
     {
+        // Полиморфизм (Polymorphism)
         // Начальный уровень
-        // // Создайте абстрактный класс Shape, содержащий абстрактный метод calculateArea(). Затем создайте классы Circle и Rectangle,
-        //  которые наследуются от Shape и реализуют метод calculateArea().
-        //  Rectangle r = new Rectangle();
-        //  Circle c = new Circle();
-        //  r.calculateArea();
-        //  c.calculateArea();
-        //  Shape.nyaw();
-        //  Circle.nyaw();
+        // Создайте интерфейс Animal с методом makeSound(). Реализуйте классы Dog и Cat, которые реализуют интерфейс.
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+        cat.makeSound();
+        dog.makeSound();
 
-        // // Средний уровень
-        // // Добавьте в Shape метод printArea(),который вызывает calculateArea(), и проверьте его работу.
-
-    //  Rectangle r = new Rectangle();
-    //      Circle c = new Circle();
-    //      r.printArea();
-    //      c.printArea();
-
-
-        // // Продвинутый уровень
-        // // Реализуйте абстрактный класс Vehicle с общими характеристиками (speed, fuel) и методами (refuel(), start()). 
-        // Создайте классы Car и Motorcycle, которые наследуются от Vehicle и реализуют специфические методы.
-
-        Car car = new Car();
-        Motorcycle motorcycle = new Motorcycle();
-
-        car.show();
-        car.refuel();
-        car.start();
-        car.show();
-        System.out.println("---------------------------");
-        motorcycle.show();
-        motorcycle.refuel();
-        motorcycle.start();
-        motorcycle.show();
+        // Средний уровень
+        // Напишите метод public static void animalSound(Animal animal), который принимает объект типа Animal и вызывает makeSound(). Передайте в него разные объекты.
+        
+        // Продвинутый уровень
+        // Создайте метод, который принимает список List<Animal> и вызывает у каждого makeSound(). Используйте instanceof, чтобы выполнить дополнительное поведение для Dog и Cat.
     }
 
    
