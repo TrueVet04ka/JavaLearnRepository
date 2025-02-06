@@ -17,13 +17,28 @@ public class Main {
         // // Средний уровень
         // // Добавьте в Shape метод printArea(),который вызывает calculateArea(), и проверьте его работу.
 
-     Rectangle r = new Rectangle();
-         Circle c = new Circle();
-         r.printArea();
-         c.printArea();
+    //  Rectangle r = new Rectangle();
+    //      Circle c = new Circle();
+    //      r.printArea();
+    //      c.printArea();
+
+
         // // Продвинутый уровень
         // // Реализуйте абстрактный класс Vehicle с общими характеристиками (speed, fuel) и методами (refuel(), start()). 
         // Создайте классы Car и Motorcycle, которые наследуются от Vehicle и реализуют специфические методы.
+
+        Car car = new Car();
+        Motorcycle motorcycle = new Motorcycle();
+
+        car.show();
+        car.refuel();
+        car.start();
+        car.show();
+        System.out.println("---------------------------");
+        motorcycle.show();
+        motorcycle.refuel();
+        motorcycle.start();
+        motorcycle.show();
     }
 
    
