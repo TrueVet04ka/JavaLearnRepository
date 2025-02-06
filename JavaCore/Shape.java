@@ -4,5 +4,8 @@ static public void nyaw()
 {
 System.out.println("nyaaaw");
 }
-    
+public void printArea()
+{
+    calculateArea();
+}
 }
