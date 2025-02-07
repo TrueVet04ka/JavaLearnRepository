@@ -1,22 +1,32 @@
+import java.util.ArrayList;
 
 public class Main {
  
     public static void main(String[] args)
     {
-        // Полиморфизм (Polymorphism)
-        // Начальный уровень
-        // Создайте интерфейс Animal с методом makeSound(). Реализуйте классы Dog и Cat, которые реализуют интерфейс.
-        Animal cat = new Cat();
-        Animal dog = new Dog();
-        Animal.animalSound(cat);
-        Animal.animalSound(dog);
-
-        // Средний уровень
-        // Напишите метод public static void animalSound(Animal animal), который принимает объект типа Animal и вызывает makeSound(). Передайте в него разные объекты.
+        // Базовый уровень
+        // Создание списка и добавление элементов
+        ArrayList <Integer> list = new  ArrayList<>(10);
+        for( int x = 0; x<10; x++)
+{
+            list.add(x);  
+}
+for( int x = 0; x<10; x++)
+{
+    System.out.println( list.get(x));
+             
+}
+        // Создайте ArrayList<Integer>, добавьте в него числа от 1 до 10 и выведите их на экран.
+        // Удаление элементов из списка
         
-
-        // Продвинутый уровень
-        // Создайте метод, который принимает список List<Animal> и вызывает у каждого makeSound(). Используйте instanceof, чтобы выполнить дополнительное поведение для Dog и Cat.
+        // Удалите из списка все четные числа и выведите обновленный список.
+        // Поиск элемента в списке
+        
+        // Проверьте, содержит ли список заданное число, используя метод contains().
+        // Перебор списка разными способами
+        
+        // Используйте for, for-each и Iterator для вывода элементов списка.
+        
     }
 
    
