@@ -5,12 +5,14 @@ public class Main {
     {
         Animal cat = new Cat();
         Animal dog = new Dog();
-        
+        Duck duck = new Duck();
         // cat.makeSound();;
         // dog.makeSound();
         Zoo zoo = new Zoo();
-        zoo.addAnimal(dog);
-        zoo.addAnimal(cat);
+        // zoo.addAnimal(dog);
+        // zoo.addAnimal(cat);
+        zoo.duckTales(duck);
+
     }
 
    

@@ -4,4 +4,11 @@ public class Zoo {
         animal.makeSound();
         animal.sleep();
     }
+    public void duckTales(Duck duck)
+    {
+        duck.makeSound();
+        duck.sleep(); 
+        duck.swim();
+        duck.fly();
+    }
 }
