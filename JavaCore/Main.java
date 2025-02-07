@@ -6,9 +6,11 @@ public class Main {
         Animal cat = new Cat();
         Animal dog = new Dog();
         
-        cat.makeSound();;
-        dog.makeSound();
-        
+        // cat.makeSound();;
+        // dog.makeSound();
+        Zoo zoo = new Zoo();
+        zoo.addAnimal(dog);
+        zoo.addAnimal(cat);
     }
 
    
